@@ -1,0 +1,41 @@
+intro-background-img = url(../images/Caribou.jpg)
+gray-text = #7f8c8d
+blue-text = #3498db
+green-color = #27ae60
+orange-color = #f39c12
+
+element-trans(prop, sec)
+	transition prop sec
+	-webkit-transition prop sec
+
+intro-background(x, y, img)
+	background: -webkit-linear-gradient(transparent, transparent), img
+	background-position: x y 
+	background-repeat: no-repeat
+	-webkit-text-fill-color: transparent
+	-webkit-background-clip: text
+	font-size: 22px;
+	margin: 0;
+	color: blue-text;
+	font-weight: normal;
+	background-clip: text;
+	display: none;
+
+unstyle-list()
+	list-style: none
+	padding: 0
+	li
+		margin: 0
+
+responsive-container()
+	element-trans(width, 0.5s)
+	margin-top: 95px
+	width: 900px
+	position: relative
+	@media (max-width: 1200px)
+		width: 650px
+	@media (max-width: 900px)
+		width: 460px
+	@media (max-width: 730px) {
+		margin-left: 135px
+	}
