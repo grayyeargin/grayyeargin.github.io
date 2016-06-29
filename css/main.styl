@@ -64,35 +64,7 @@ body {
 	margin: 0 auto;
 }
 
-header {
-	padding: 10px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	.header-container {
-		margin: 0 auto;
-	}
-	#logo {
-		font-size: 24px;
-		color: blue-text;
-		a {
-			color: blue-text;
-			text-decoration: none;
-			element-trans(color, 0.2s)
-			&:hover {
-				color: orange-color;
-			}			
-		}
-	}
-	nav {
-		display: inline-block;
-	}
-	ul {
-		unstyle-list()
-	}
-}
-
+@import 'stylus/nav'
 @import 'stylus/intro'
 @import 'stylus/portfolio'
 @import 'stylus/about'
