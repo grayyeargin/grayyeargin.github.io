@@ -2,9 +2,7 @@
 
 #about {
 	display: none;
-	.container{
-		responsive-container()
-	}
+	
 	#about-me-img {
 		width: 277px;
 		padding: 3px;
@@ -16,5 +14,11 @@
 		@media (max-width: 900px) {
 			width: 200px;
 		}
+	}
+}
+
+@media (min-width: 768px) {
+	.container{
+		responsive-container()
 	}
 }

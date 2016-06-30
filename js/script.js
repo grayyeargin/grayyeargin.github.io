@@ -62,6 +62,7 @@ function checkBrowserSupport(){
 
 
 function setIntroHeight(){
+    return;
     var introSection = document.getElementById('intro');
     var windowHeight = window.innerHeight;
     var windowWidth = window.innerWidth;
@@ -182,7 +183,7 @@ function letterBounceEnter(el) {
 // Route transitions
 function enterIntro(){
   if (Modernizr.cssreflections) {
-    document.getElementById('intro').style.display = "block";
+    document.getElementById('intro').style.display = "flex";
     document.body.style.background = "#fff";
     document.getElementById('logo').style.color = "#2980b9";
     introFadeTitle();
