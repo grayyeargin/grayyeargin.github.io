@@ -70,6 +70,7 @@ header {
   left: 0;
   width: 100%;
   background: #fff;
+  z-index: 1;
 }
 header .header-container {
   margin: 0 auto;
@@ -105,6 +106,7 @@ header ul li {
 @media (min-width: 768px) {
   header {
     padding: 10px;
+    z-index: 0;
   }
   header #logo {
     display: block;
@@ -124,7 +126,7 @@ section#intro {
   margin-top: -25px;
 }
 section#intro .container {
-  width: 660px;
+  width: 100%;
 }
 section#intro .content {
   height: 250px;
@@ -265,6 +267,40 @@ section#portfolio .work-example:nth-of-type(8) {
     left: 230px;
   }
 }
+@media (max-width: 768px) {
+  section#portfolio .work-example:nth-of-type(3) {
+    top: 480px;
+    left: 15px;
+  }
+  section#portfolio .work-example:nth-of-type(4) {
+    top: 690px;
+    left: 15px;
+  }
+  section#portfolio .work-example:nth-of-type(7) {
+    top: 480px;
+    left: 195px;
+  }
+  section#portfolio .work-example:nth-of-type(8) {
+    top: 690px;
+    left: 195px;
+  }
+  section#portfolio .work-example:nth-of-type(1) {
+    top: 60px;
+    left: 15px;
+  }
+  section#portfolio .work-example:nth-of-type(2) {
+    top: 270px;
+    left: 15px;
+  }
+  section#portfolio .work-example:nth-of-type(5) {
+    top: 60px;
+    left: 195px;
+  }
+  section#portfolio .work-example:nth-of-type(6) {
+    top: 270px;
+    left: 195px;
+  }
+}
 section#portfolio .container {
   transition: width 0.5s;
   -webkit-transition: width 0.5s;
@@ -286,6 +322,22 @@ section#portfolio .container {
     margin-left: 135px;
   }
 }
+@media (max-width: 1200px) {
+  section#portfolio .container {
+    width: 650px;
+  }
+}
+@media (max-width: 900px) {
+  section#portfolio .container {
+    width: 460px;
+    margin: 75px auto 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  section#portfolio .container {
+    width: 360px;
+  }
+}
 section#portfolio .work-example {
   transition: left 0.5s, top 0.5s, opacity 1s;
   -webkit-transition: left 0.5s, top 0.5s, opacity 1s;
@@ -293,6 +345,9 @@ section#portfolio .work-example {
   width: 200px;
   height: 250px;
   font-size: 14px;
+}
+section#portfolio .work-example span {
+  display: inline-block;
 }
 section#portfolio .work-description {
   display: none;
@@ -355,6 +410,15 @@ section#portfolio .grayscale {
 section#portfolio .grayscale:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
+}
+@media (max-width: 768px) {
+  section#portfolio .work-image {
+    height: 150px;
+    width: 150px;
+  }
+  section#portfolio .work-description .left-section {
+    padding-top: 160px;
+  }
 }
 #about {
   display: none;

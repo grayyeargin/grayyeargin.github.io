@@ -18,6 +18,7 @@ $(document).ready(function() {
     $el.siblings('.work-example').addClass('hidden').css('opacity', '0')
     $('#' + $el.data('target')).fadeIn();
     document.getElementById('portfolio-title').style.opacity = "0";
+    $('body').animate({ scrollTop: "0px" });
   })
 
   $('#portfolio .close').on('click', function(){
