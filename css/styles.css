@@ -269,36 +269,36 @@ section#portfolio .work-example:nth-of-type(8) {
 }
 @media (max-width: 768px) {
   section#portfolio .work-example:nth-of-type(3) {
-    top: 480px;
+    top: 415px;
     left: 15px;
   }
   section#portfolio .work-example:nth-of-type(4) {
-    top: 690px;
+    top: 595px;
     left: 15px;
   }
   section#portfolio .work-example:nth-of-type(7) {
-    top: 480px;
-    left: 195px;
+    top: 415px;
+    left: 170px;
   }
   section#portfolio .work-example:nth-of-type(8) {
-    top: 690px;
-    left: 195px;
+    top: 595px;
+    left: 170px;
   }
   section#portfolio .work-example:nth-of-type(1) {
     top: 60px;
     left: 15px;
   }
   section#portfolio .work-example:nth-of-type(2) {
-    top: 270px;
+    top: 240px;
     left: 15px;
   }
   section#portfolio .work-example:nth-of-type(5) {
     top: 60px;
-    left: 195px;
+    left: 170px;
   }
   section#portfolio .work-example:nth-of-type(6) {
-    top: 270px;
-    left: 195px;
+    top: 240px;
+    left: 170px;
   }
 }
 section#portfolio .container {
@@ -335,7 +335,7 @@ section#portfolio .container {
 }
 @media (max-width: 768px) {
   section#portfolio .container {
-    width: 360px;
+    width: 322px;
   }
 }
 section#portfolio .work-example {
@@ -413,8 +413,8 @@ section#portfolio .grayscale:hover {
 }
 @media (max-width: 768px) {
   section#portfolio .work-image {
-    height: 150px;
-    width: 150px;
+    height: 135px;
+    width: 135px;
   }
   section#portfolio .work-description .left-section {
     padding-top: 160px;

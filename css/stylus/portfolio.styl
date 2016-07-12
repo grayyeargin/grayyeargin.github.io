@@ -31,23 +31,23 @@ section#portfolio
 		for port in (3 4 7 8)
 			.work-example:nth-of-type({port})
 				if port % 2
-					top: 480px
+					top: 415px
 				else
-					top: 480px + 210px
+					top: 415px + 180px
 				if port < 5
 					left: 15px
 				else 
-					left: 195px
+					left: 170px
 		for port in (1 2 5 6)
 			.work-example:nth-of-type({port})
 				if port % 2
 					top: 60px
 				else
-					top: 60px + 210px
+					top: 60px + 180px
 				if port < 5
 					left: 15px
 				else 
-					left: 195px
+					left: 170px
 
 	.container {
 		responsive-container()
@@ -59,7 +59,7 @@ section#portfolio
 			margin: 75px auto 0 auto;
 		}
 		@media (max-width: 768px) {
-			width: 360px;
+			width: 322px;
 		}
 	}
 	.work-example {
@@ -140,8 +140,8 @@ section#portfolio
 @media (max-width: 768px) {
 	section#portfolio {
 		.work-image {
-			height: 150px;
-			width: 150px;
+			height: 135px;
+			width: 135px;
 		}
 		
 		.work-description {
