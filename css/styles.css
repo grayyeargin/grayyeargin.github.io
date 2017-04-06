@@ -137,71 +137,102 @@ section#intro #name-title-img {
   display: none;
 }
 section#intro #name-title {
-  display: none;
-  background: -webkit-linear-gradient(transparent, transparent), url("../images/Caribou.jpg");
-  background-position: 70% 43%;
-  background-repeat: no-repeat;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-size: 22px;
-  margin: 0;
-  color: #3498db;
-  font-weight: normal;
-  background-clip: text;
+  color: #fff;
   display: none;
   font-size: 85px;
   font-weight: bolder;
   line-height: 1;
   padding-bottom: 20px;
+  margin: 0;
 }
 section#intro #location {
+  margin: 0;
+  font-weight: normal;
+  display: none;
+  color: #fff;
+  font-size: 22px;
 /*intro-background(99%, 1%, intro-background-img)*/
   letter-spacing: 6px;
-  background: -webkit-linear-gradient(transparent, transparent), url("../images/Caribou.jpg");
-  background-position: 99% 1%;
-  background-repeat: no-repeat;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-size: 22px;
-  margin: 0;
-  color: #3498db;
-  font-weight: normal;
-  background-clip: text;
-  display: none;
   margin-bottom: 15px;
   margin-right: -7px;
 }
 section#intro #occupation {
-  background: -webkit-linear-gradient(transparent, transparent), url("../images/Caribou.jpg");
-  background-position: 99% 10%;
-  background-repeat: no-repeat;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-size: 22px;
   margin: 0;
-  color: #3498db;
   font-weight: normal;
-  background-clip: text;
   display: none;
+  color: #fff;
   font-size: 15px;
 }
 @media (min-width: 768px) {
   section#intro .content {
     height: 250px;
   }
+  section#intro .intro-bg-desktop {
+    display: inline-block;
+    position: absolute;
+    max-width: 775px;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
   section#intro #name-title {
     line-height: inherit;
     padding-bottom: 0;
     font-size: 96px;
+    position: relative;
+    font-weight: normal;
+    margin-right: 30px;
   }
   section#intro #location {
     letter-spacing: 23.5px;
-    margin-right: -29px;
+    margin-right: -65px;
+    font-size: 22px;
+    position: relative;
   }
   section#intro #occupation {
     letter-spacing: 2.9px;
-    padding-left: 7px;
+    padding-left: 100px;
     font-size: 22px;
+    position: relative;
+  }
+}
+@media (max-width: 768px) {
+  section#intro .intro-bg-desktop {
+    display: none !important;
+  }
+  section#intro #name-title {
+    background: -webkit-linear-gradient(transparent, transparent), url("../images/Caribou.jpg");
+    background-position: 70% 43%;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
+    color: #3498db;
+    background-clip: text;
+    display: none;
+  }
+  section#intro #location {
+    background: -webkit-linear-gradient(transparent, transparent), url("../images/Caribou.jpg");
+    background-position: 99% 1%;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
+    color: #3498db;
+    background-clip: text;
+    display: none;
+    margin-bottom: 15px;
+  }
+  section#intro #occupation {
+    background: -webkit-linear-gradient(transparent, transparent), url("../images/Caribou.jpg");
+    background-position: 99% 10%;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
+    color: #3498db;
+    background-clip: text;
+    display: none;
   }
 }
 section#portfolio {
