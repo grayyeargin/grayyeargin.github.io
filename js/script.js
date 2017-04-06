@@ -82,16 +82,20 @@ function setIntroHeight(){
 
 function introFadeTitle(){
     setTimeout(function(){
-        $('#intro #name-title').fadeIn('slow');
+        $('#intro .intro-bg-desktop').fadeIn('slow');
+    }, 1);
+
+    setTimeout(function(){
+        $('#intro #name-title').fadeIn(1500);
     }, 300);
 
     setTimeout(function(){
-        $('#intro #location').fadeIn('slow');
-    }, 600);
+        $('#intro #location').fadeIn(1500);
+    }, 800);
 
     setTimeout(function(){
-        $('#intro #occupation').fadeIn('slow');
-    }, 1000);
+        $('#intro #occupation').fadeIn(1500);
+    }, 1300);
 }
 
 
@@ -197,9 +201,10 @@ function enterIntro(){
 
 function exitIntro(){
   if (Modernizr.cssreflections) {
-    letterFade('location', 15);
-    letterFade('occupation', 7);
-    letterFade('name-title', 20);
+    // letterFade('location', 15);
+    // letterFade('occupation', 7);
+    // letterFade('name-title', 20);
+    $('#intro').fadeOut('slow');
     setTimeout(function(){
       $('#intro .content').children().css('display', 'none')
       document.getElementById('intro').style.display = "none";
