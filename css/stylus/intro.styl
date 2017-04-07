@@ -19,18 +19,25 @@ section#intro {
 		margin: 0 auto;
 	}
 	
-	#name-title-img {
-		display: none;
+	.intro-bg {
+		display: inline-block;
+		position: absolute;
+		max-width: 500px;
+		width: 125%;
+		left: 50%;
+		transform: translate(-50%, -30%);
 	}
 	
 	#name-title {
 		color: #fff;
 		display: none;
-		font-size: 85px;
-		font-weight: bolder;
+		font-size: 40px;
+		font-weight: normal;
 		line-height: 1;
-		padding-bottom: 20px;
+		letter-spacing: 6.5px;
+		padding-bottom: 15px;
 		margin: 0;
+		position: relative;
 	}
 	
 	#location {
@@ -38,11 +45,11 @@ section#intro {
 		font-weight: normal;
 		display: none;
 		color: #fff;
-		font-size: 22px;
+		font-size: 18px;
 		/*intro-background(99%, 1%, intro-background-img)*/
-		letter-spacing: 6px;
+		letter-spacing: 9.5px;
 		margin-bottom: 15px;
-		margin-right: -7px;
+		position: relative;
 	}
 	
 	#occupation {
@@ -51,6 +58,7 @@ section#intro {
 		display: none;
 		color: #fff;
 		font-size: 15px;
+		position: relative;
 	}
 	
 }
@@ -62,21 +70,15 @@ section#intro {
 			height: 250px;
 		}
 		
-		.intro-bg-desktop {
-			display: inline-block;
-			position: absolute;
-			max-width: 775px;
+		.intro-bg {
 			width: 95%;
-			left: 50%;
-			transform: translate(-50%, -30%);
+			max-width: 775px;
 		}
 		
 		#name-title {
 			line-height: inherit;
 			padding-bottom: 0;
-			font-size: 96px;
-			position: relative;
-			font-weight: normal;
+			font-size: 84px;
 			margin-right: 30px;
 		}
 		
@@ -84,39 +86,37 @@ section#intro {
 			letter-spacing: 23.5px;
 			margin-right: -65px;
 			font-size: 22px;
-			position: relative;
 		}
 		
 		#occupation {
 			letter-spacing: 2.9px;
 			padding-left: 100px;
 			font-size: 22px;
-			position: relative;
 		}
 	}
 }
 
 
 // ONLY MOBILE
-@media (max-width: 767px) {
-	section#intro {
+// @media (max-width: 767px) {
+// 	section#intro {
 		
-		.intro-bg-desktop {
-			display: none !important;
-		}
+// 		.intro-bg-desktop {
+// 			display: none !important;
+// 		}
 		
-		#name-title {
-			intro-background(70%, 43%, intro-background-img)
-		}
+// 		#name-title {
+// 			intro-background(70%, 43%, intro-background-img)
+// 		}
 		
-		#location {
-			intro-background(99%, 1%, intro-background-img)
-			margin-bottom: 15px;
-		}
+// 		#location {
+// 			intro-background(99%, 1%, intro-background-img)
+// 			margin-bottom: 15px;
+// 		}
 		
-		#occupation {
-			intro-background(99%, 10%, intro-background-img)
-		}
+// 		#occupation {
+// 			intro-background(99%, 10%, intro-background-img)
+// 		}
 		
-	}
-}
+// 	}
+// }
