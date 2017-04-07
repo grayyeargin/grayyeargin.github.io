@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    checkBrowserSupport();
     setIntroHeight();
     introFadeTitle();
 
@@ -52,14 +51,6 @@ var throttleSwitch = (function(){
 })();
 
 
-function checkBrowserSupport(){
-  if (!Modernizr.cssreflections) {
-    $('#intro #name-title').remove();
-    $('#intro #name-title-img').attr('id', "name-title").addClass('intro-titles');
-  }
-}
-
-
 
 
 function setIntroHeight(){
@@ -82,7 +73,7 @@ function setIntroHeight(){
 
 function introFadeTitle(){
     setTimeout(function(){
-        $('#intro .intro-bg-desktop').fadeIn('slow');
+        $('#intro .intro-bg').fadeIn('slow');
     }, 1);
 
     setTimeout(function(){
