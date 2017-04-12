@@ -106,7 +106,7 @@ header ul li {
 @media (min-width: 768px) {
   header {
     padding: 10px;
-    z-index: 0;
+    width: auto;
   }
   header #logo {
     display: block;
@@ -133,13 +133,23 @@ section#intro .content {
   text-align: center;
   margin: 0 auto;
 }
+section#intro .intro-bg-wrap {
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  max-width: 775px;
+  transform: translate(-50%, -30%);
+}
 section#intro .intro-bg {
   display: inline-block;
-  position: absolute;
+  position: relative;
   max-width: 500px;
   width: 125%;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, 0%);
 }
 section#intro #name-title {
   color: #fff;
@@ -783,34 +793,34 @@ body:after {
 }
 @-moz-keyframes fade-out {
   15% {
-    background: #fff;
+    opacity: 0;
   }
   100% {
-    background: #fff;
+    opcity: 0;
   }
 }
 @-webkit-keyframes fade-out {
   15% {
-    background: #fff;
+    opacity: 0;
   }
   100% {
-    background: #fff;
+    opcity: 0;
   }
 }
 @-o-keyframes fade-out {
   15% {
-    background: #fff;
+    opacity: 0;
   }
   100% {
-    background: #fff;
+    opcity: 0;
   }
 }
 @keyframes fade-out {
   15% {
-    background: #fff;
+    opacity: 0;
   }
   100% {
-    background: #fff;
+    opcity: 0;
   }
 }
 @-moz-keyframes zoom-enter {

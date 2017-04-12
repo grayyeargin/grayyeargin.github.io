@@ -73,7 +73,7 @@ function setIntroHeight(){
 
 function introFadeTitle(){
     setTimeout(function(){
-        $('#intro .intro-bg').fadeIn('slow');
+        $('#intro .intro-bg-wrap').fadeIn('slow');
     }, 1);
 
     setTimeout(function(){
@@ -192,10 +192,10 @@ function enterIntro(){
 
 function exitIntro(){
   if (Modernizr.cssreflections) {
-    // letterFade('location', 15);
-    // letterFade('occupation', 7);
-    // letterFade('name-title', 20);
-    $('#intro').fadeOut('slow');
+    letterFade('location', 15);
+    letterFade('occupation', 7);
+    letterFade('name-title', 20);
+    // $('#intro').fadeOut('slow');
     setTimeout(function(){
       $('#intro .content').children().css('display', 'none')
       document.getElementById('intro').style.display = "none";

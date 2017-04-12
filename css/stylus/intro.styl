@@ -19,13 +19,24 @@ section#intro {
 		margin: 0 auto;
 	}
 	
+	.intro-bg-wrap {
+		display: flex;
+		align-items: center;
+    overflow-x: hidden;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    max-width: 775px;
+    transform: translate(-50%, -30%)
+	}
+	
 	.intro-bg {
 		display: inline-block;
-		position: absolute;
+		position: relative;
 		max-width: 500px;
 		width: 125%;
 		left: 50%;
-		transform: translate(-50%, -30%);
+		transform: translate(-50%, 0%);
 	}
 	
 	#name-title {
