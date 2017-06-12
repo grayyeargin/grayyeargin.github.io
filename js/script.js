@@ -1,6 +1,9 @@
 $(document).ready(function() {
-    setIntroHeight();
-    introFadeTitle();
+  $('#intro .intro-bg').one('load', function(){
+      $('.loader-wrapper').hide();
+      setIntroHeight();
+      introFadeTitle();
+  })
 
 
   $('header a').on('click', function(){

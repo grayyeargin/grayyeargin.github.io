@@ -16,6 +16,15 @@
   color: #f39c12;
   cursor: pointer;
 }
+.loader-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
 /******************/
 /** BODY STYLING **/
 /******************/
@@ -132,6 +141,7 @@ section#intro .content {
   height: 250px;
   text-align: center;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 section#intro .intro-bg-wrap {
   display: flex;
