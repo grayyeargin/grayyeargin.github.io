@@ -144,7 +144,7 @@ section#intro .content {
   overflow-x: hidden;
 }
 section#intro .intro-bg-wrap {
-  display: flex;
+  display: none;
   align-items: center;
   overflow-x: hidden;
   position: absolute;
@@ -160,6 +160,10 @@ section#intro .intro-bg {
   width: 125%;
   left: 50%;
   transform: translate(-50%, 0%);
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out;
 }
 section#intro #name-title {
   color: #fff;

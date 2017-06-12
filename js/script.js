@@ -2,9 +2,9 @@ $(document).ready(function() {
   $('#intro .intro-bg').one('load', function(){
       $('.loader-wrapper').hide();
       setIntroHeight();
-      introFadeTitle();
+      $(this).css('opacity', '1');
+      enterIntro();
   })
-
 
   $('header a').on('click', function(){
     // switchSection($(this).attr('href'))
@@ -76,8 +76,8 @@ function setIntroHeight(){
 
 function introFadeTitle(){
     setTimeout(function(){
-        $('#intro .intro-bg-wrap').fadeIn('slow');
-    }, 1);
+        $('#intro .intro-bg-wrap').css("display", "flex").hide().fadeIn('slow');
+    }, 100);
 
     setTimeout(function(){
         $('#intro #name-title').fadeIn(1500);
