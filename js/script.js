@@ -181,31 +181,21 @@ function letterBounceEnter(el) {
 
 // Route transitions
 function enterIntro(){
-  if (Modernizr.cssreflections) {
     document.getElementById('intro').style.display = "flex";
     document.body.style.background = "#fff";
     document.getElementById('logo').style.color = "#2980b9";
     introFadeTitle();
-  } else {
-    $('#intro .intro-titles').hide();
-    document.getElementById('intro').style.display = "block";
-    introFadeTitle();
-  }
 }
 
 function exitIntro(){
-  if (Modernizr.cssreflections) {
-    letterFade('location', 15);
-    letterFade('occupation', 7);
-    letterFade('name-title', 20);
-    // $('#intro').fadeOut('slow');
-    setTimeout(function(){
-      $('#intro .content').children().css('display', 'none')
-      document.getElementById('intro').style.display = "none";
-    }, 700);
-  } else {
-    $('#intro').fadeOut('slow');
-  }
+  letterFade('location', 15);
+  letterFade('occupation', 7);
+  letterFade('name-title', 20);
+  // $('#intro').fadeOut('slow');
+  setTimeout(function(){
+    $('#intro .content').children().css('display', 'none')
+    document.getElementById('intro').style.display = "none";
+  }, 700);
 }
 
 function portfolioEnter(){
