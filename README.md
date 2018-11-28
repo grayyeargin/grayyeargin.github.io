@@ -1,2 +1,0 @@
-# grayyeargin.github.io
-portfolio
