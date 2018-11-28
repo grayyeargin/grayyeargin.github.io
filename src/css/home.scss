@@ -1,0 +1,79 @@
+section#intro {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+
+	.intro-bg {
+		position: absolute;
+		width: 600px;
+	}
+
+	.intro-titles {
+		margin-top: -30px;
+	}
+	
+	#name-title {
+		color: #fff;
+		font-size: 40px;
+		font-weight: normal;
+		line-height: 1;
+		letter-spacing: 8.5px;
+		padding-bottom: 15px;
+		margin: 0;
+		position: relative;
+	}
+	
+	#location {
+		margin: 0;
+		font-weight: normal;
+		color: #fff;
+		font-size: 18px;
+		letter-spacing: 9.5px;
+		margin-bottom: 15px;
+		position: relative;
+	}
+	
+	#occupation {
+		margin: 0;
+		font-weight: normal;
+		color: #fff;
+		font-size: 15px;
+		position: relative;
+		letter-spacing: 0.3px;
+	}
+	
+}
+
+// TABLET AND DESKTOP
+@media (min-width: $md-break) {
+	section#intro {	
+		.intro-bg {
+			width: 775px;
+		}
+
+		#name-title {
+			letter-spacing: 9.5px;
+			line-height: inherit;
+			padding-bottom: 0;
+			font-size: 84px;
+			margin-left: 30px;
+		}
+		
+		#location {
+			letter-spacing: 23.5px;
+			margin-left: 56px;
+			font-size: 22px;
+		}
+		
+		#occupation {
+			letter-spacing: 2.9px;
+			padding-left: 100px;
+			font-size: 22px;
+		}
+	}
+}

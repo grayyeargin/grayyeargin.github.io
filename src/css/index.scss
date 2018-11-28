@@ -1,0 +1,28 @@
+@import "variables";
+@import "typogrophy";
+@import "layout";
+@import "home";
+@import "contact";
+@import "about";
+@import "portfolio";
+
+@import "lightbox";
+
+body {
+	margin: 0;
+}
+
+.button {
+	/*height: 30px;*/
+  	border: 2px solid #27ae60;
+  	color: #27ae60;
+  	padding: 8px;
+  	font-size: 11px;
+  	display: inline-block;
+  	border-radius: 5px;
+}
+.button:hover {
+  	border: 2px solid #f39c12;
+  	color: #f39c12;
+  	cursor: pointer;
+}

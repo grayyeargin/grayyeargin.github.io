@@ -1,0 +1,44 @@
+{
+  "name": "grays-portfolio",
+  "description": "Grays Portfolio Site",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "deploy": "gatsby build && gh-pages -d public -b master"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.48",
+    "gatsby-plugin-google-tagmanager": "^2.0.6",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sass": "^2.0.4",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-contentful": "^2.0.14",
+    "html-react-parser": "^0.4.7",
+    "node-sass": "^4.10.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^6.1.0",
+    "gh-pages": "^2.0.1",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.4",
+    "prettier": "1.14.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --write --use-tabs --no-semi --single-quote --trailing-comma es5 --no-bracket-spacing",
+      "git add"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+#contact {
+	.container {
+		margin-top: 95px;
+		max-width: 900px;
+	}
+
+	#contact-icons {
+		display: grid;
+		margin-top: 20px;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		grid-column-gap: 15px;
+		grid-row-gap: 30px;
+	}
+	
+	.fa {
+		width: 35px;
+	}
+	
+	.icon{
+		// element-trans(all, 0.5s)
+
+		div {
+			display: inline-block;
+			margin-left: 10px;
+		}
+		span {
+			opacity: 0;
+		}
+	}
+}

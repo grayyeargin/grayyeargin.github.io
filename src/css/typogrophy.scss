@@ -1,0 +1,33 @@
+body {
+	font-family: "Raleway", "Century Gothic",Arial,CenturyGothic,AppleGothic,sans-serif;
+	color: $gray-text;
+}
+
+a {
+	color: $green-color;
+	text-decoration: none;
+	@include element-trans(color, 0.2s)
+	&:hover {
+		color: $orange-color;
+	}
+}
+
+.title-header {
+	margin: 0;
+	font-size: 32px;
+	font-weight: normal;
+	color: $blue-text;
+}
+
+.sub-header {
+	margin: 0;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.minor-header {
+	margin: 0;
+	font-size: 20px;
+	color: $blue-text;
+	font-weight: normal;
+}

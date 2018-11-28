@@ -1,0 +1,24 @@
+$gray-text: #7f8c8d;
+$blue-text: #3498db;
+$green-color: #27ae60;
+$light-green: #2ecc71;
+$orange-color: #f39c12;
+
+@mixin element-trans($prop, $sec) {
+	transition: $prop $sec;
+	-webkit-transition: $prop $sec;
+}
+
+$md-break: 800px;
+
+// responsive-container()
+// 	element-trans(width, 0.5s)
+// 	width: 900px
+// 	position: relative
+// 	@media (max-width: 1200px)
+// 		width: 650px
+// 	@media (max-width: 900px)
+// 		width: 460px
+// 	@media (max-width: 730px) {
+// 		margin-left: 135px
+// 	}
