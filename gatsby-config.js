@@ -23,9 +23,9 @@ module.exports = {
 	      	}
 	    },
 	    {
-			resolve: `gatsby-plugin-google-tagmanager`,
+			resolve: `gatsby-plugin-gtag`,
 			options: {
-				id: 'UA-52536376-1',
+				trackingId: process.env.GOOGLE_TRACKING_ID,
 			},
 		},
 	]
